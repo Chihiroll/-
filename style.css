@@ -1,0 +1,138 @@
+#startpage{
+    background-image: url("タイピングゲーム_スタート画面2.jpg");
+}
+    /*スコア表示ボタンの見た目*/
+.buttons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        background-color: black;
+        color:  white;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        outline: 1px solid black;
+        font-family: "游ゴシック体","YuGothic"; font-weight: bold;
+        display: block;
+        opacity: 1;
+        z-index: 12;
+
+}
+
+.buttons:hover {
+    background-color: white;
+    color: black;
+    outline: 1px dashed black;
+}
+
+#scorepage{
+    background-image: url("スコアタイム確認画面.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    height: 100vh;
+}
+
+#gamepage{
+    background-image: url(ゲーム画面1.jpg);
+    opacity: 0;
+    z-index: 0;
+}
+
+.background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.background.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+body{
+    color: #333333;
+    text-align: center;
+    margin: 0;
+    text-size-adjust: 150%;
+    font-size: 30px;
+
+    background-image: url(ゲーム画面1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+#scorefont {
+    font-family: "游ゴシック体","YuGothic"; font-weight: bold;
+    color: white;
+    size: 60px;
+    left: 4cm;
+    text-align: left;
+    bottom: 12cm;
+    z-index: 12;
+}
+
+#scoregraph {
+    position: static;
+    width: 40%;
+    max-width: 400px;
+    height: 300px;
+    margin-top: 400px;
+    margin-left: 100px;
+    z-index: 13;
+}
+
+#scoregraph canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#typingfont, #anotherfont, #questionfont, #thescorefont, #nowtimefont {
+    position: relative;
+    z-index: 10;
+}
+
+
+#questionfont{
+    position: absolute;
+    top: 40%;
+}
+
+#typingfont {
+    position: absolute;
+    top: 50%;
+}
+
+.SE {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    z-index: 10;
+}
+
+#anotherfont {
+    position: fixed;
+    top: 50%;
+}
+
+#thescorefont {
+    position: fixed;
+    top: 60%;
+}
