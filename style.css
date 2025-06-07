@@ -1,5 +1,5 @@
 #startpage{
-    background-image: url("タイピングゲーム_スタート画面2.jpg");
+    background-image: url("startscreen.jpg");
 }
     /*スコア表示ボタンの見た目*/
 .buttons {
@@ -37,7 +37,7 @@
 }
 
 #gamepage{
-    background-image: url(ゲーム画面1.jpg);
+    background-image: url(gamescreen.jpg);
     opacity: 0;
     z-index: 0;
 }
